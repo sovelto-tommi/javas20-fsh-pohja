@@ -1,0 +1,8 @@
+
+CREATE TABLE IF NOT EXISTS color (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR (128) NOT NULL UNIQUE,
+  hex CHAR(7) NOT NULL,
+  rgb SMALLINT [],
+  custom BOOLEAN DEFAULT 't'
+);
