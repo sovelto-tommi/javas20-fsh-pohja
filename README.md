@@ -56,13 +56,14 @@ Voit myös tehdä React-käyttöliittymän. Tee se aivan omaaan projektiin. Kun 
 
 ## Pilveen
 
-Vie projekti pilveen. Ohjeet löydät Herokusta: https://devcenter.heroku.com/articles/getting-started-with-java
+Vie projekti pilveen. Ohjeet löydät Herokusta.
 
 
-
-- luo tunnus
-- luo projekti, lisää siihen Postgres tietokanta
-- Lataa Heroku CLI
-- Vie CLI:n ja Gitin avulla projekti pilveen
+- luo tunnus: https://signup.heroku.com/dc
+- luo uusi projekti, nimeä se haluamaksesi. Projekti löytyy projektin nimen perusteella, esimerkiksi 
+*esimerkki*-niminen projekti löytyisi osoitteesta https://esimerkki.herokuapps.com/ 
+- Lataa Heroku CLI: https://cli-assets.heroku.com/heroku-x64.exe ja asenna se
+- Vie CLI:n ja Gitin avulla projekti pilveen. Hyvät ohjeet löytyvät Luomasi Heroku-projektin *Deploy* 
+välilehdeltä
 - Katso että näyttää ok:lta 
 
