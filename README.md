@@ -58,12 +58,17 @@ Voit myös tehdä React-käyttöliittymän. Tee se aivan omaaan projektiin. Kun 
 
 Vie projekti pilveen. Ohjeet löydät Herokusta.
 
-
 - luo tunnus: https://signup.heroku.com/dc
 - luo uusi projekti, nimeä se haluamaksesi. Projekti löytyy projektin nimen perusteella, esimerkiksi 
 *esimerkki*-niminen projekti löytyisi osoitteesta https://esimerkki.herokuapps.com/ 
 - Lataa Heroku CLI: https://cli-assets.heroku.com/heroku-x64.exe ja asenna se
 - Vie CLI:n ja Gitin avulla projekti pilveen. Hyvät ohjeet löytyvät Luomasi Heroku-projektin *Deploy* 
-välilehdeltä
-- Katso että näyttää ok:lta 
+välilehdeltä. Lyhyesti kuitenkin (olettaen että sovelluksen nimi on *esimerkki*)
+    - Käynnistä command prompt sovelluksen juurihakemistoon, siihen mistä löytyvät mm. `.git/` ja `.gitignore`
+    - Varmista että viimeisin versio on committoitu Gittiin, `git add .` ja `git commit -m"viesti"` tms.
+    - Kirjaudu herokuun Heroku CLIstä: `heroku login`. Tämä käynnistää selaimen ikkunan jolla kirjautuminen tehdään
+    - Lisää Heroku remote repositorioksi: `heroku git:remote -a esimerkki` (muista oma sovelluksesi nimi)
+    - Pushaa projektisi Herokuun: `git push heroku master`
+- Katso että näyttää ok:lta, eli käynnistä https://esimerkki.herokuapp.com/esimerkki (taas oma sovelluksen nimi...) 
+
 
