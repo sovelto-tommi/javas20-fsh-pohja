@@ -7,10 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,6 +45,7 @@ public class JavaS20FshPohjaApplication {
                 System.out.println("Deleting failed!!!!!");
             } else {
                 System.out.printf("Deleted %s\n", uusi);
+                System.out.println(dao.deleteColor(uusi.getId()) ? "Poistui vaikka jo poistettu????" : "ei poistanut jo poistettua");
             }
         };
     }

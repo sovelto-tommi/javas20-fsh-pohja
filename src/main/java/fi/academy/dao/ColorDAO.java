@@ -28,10 +28,16 @@ public class ColorDAO {
         this.jdbc = jdbc;
     }
 
+    /**
+     * The fetchAllColors class fetches the colors from DB, and returns as a List of Colors.
+     *
+     * @return A list of Colors
+     */
     public List<Color> fetchAllColors() {
         List<Color> list = jdbc.query("SELECT * FROM color", rowMapper);
         return list;
     }
+
     public Optional<Color> findById(int id) {
         try {
             Color c = jdbc.queryForObject("SELECT * FROM color WHERE id=?", new Object[]{id}, rowMapper);
@@ -69,8 +75,9 @@ public class ColorDAO {
         return c;
     }
 
-    public void deleteColor(int id) {
-        jdbc.update("DELETE FROM color WHERE id = ?", id );
+    public boolean deleteColor(int id) {
+        int count = jdbc.update("DELETE FROM color WHERE id = ?", id );
+        return count == 1;
     }
 
     private RowMapper<Color> rowMapper = (rs, i) -> {
