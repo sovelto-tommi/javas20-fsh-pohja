@@ -51,10 +51,18 @@ index.html sieltä jo löytyy, mutta hyvin alkeellisena.
 Tee siis vähintään sivu, joka hakee JavaScriptillä REST-palvelimelta värit
 ja näyttää ne taulussa(`<table>`) tai listassa (`<ul>` tai `<ol>`). 
 
+Voit myös tehdä React-käyttöliittymän. Tee se aivan omaaan projektiin. Kun se on valmis niin 
+`npm build` luo levitettävän version
+
 ## Pilveen
 
-Vie projekti pilveen. Ohjeet löydät Herokusta
+Vie projekti pilveen. Ohjeet löydät Herokusta: https://devcenter.heroku.com/articles/getting-started-with-java
+
+
 
 - luo tunnus
 - luo projekti, lisää siihen Postgres tietokanta
+- Lataa Heroku CLI
+- Vie CLI:n ja Gitin avulla projekti pilveen
+- Katso että näyttää ok:lta 
 
